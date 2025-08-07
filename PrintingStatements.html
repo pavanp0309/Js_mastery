@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Inline Js -->
+     <Button onclick="document.write('total:',2+2)">AddToNumber</Button>
+     <Button onclick="document.write(`'total',${2+2}`)">AddToNumber</Button>
+     <Button onclick="console.log('total:',2+2)">AddToNumber</Button>
+     <Button onclick="console.log(`total:,${'2'+2}`)">conversion</Button>
+     <Button onclick="console.log(`total:,${2+'2'}`)">conversion</Button>
+     <Button onclick="console.log(`total:,${+'2'+ 2}`)">conversion</Button>
+     <Button onclick="console.log(`total:,${2 + +'2'+ '2'}`)">conversion</Button>
+     <Button onclick="alert(`total:${2+2}`)">AddToNumber</Button>
+     <!-- 1.write a program to print Product(*) of 2 numbers and log the result with all print statement 
+     2.write sentance combining your name and age 
+      my name is name and  age is 23 -->
+     <!-- 3. print the OutPut `total,${'2'+2}`
+     '2'--text
+     2--number
+     4. print the OutPut `total,${2+'2'}`
+     5. print the OutPut `total,${'2'+'2'}` -->
+     6.print the OutPut `total,${2 + +'2' + "2"}` // 42
+</body>
+</html>

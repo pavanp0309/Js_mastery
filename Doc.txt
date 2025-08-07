@@ -1,0 +1,116 @@
+TOPICS
+what is Js :
+ HiGhlevel interpted Prototype Based Object oriented single thread And synchronous language 
+ synchronous:line by line excution of code 
+ single thread :
+  taking pen writting it
+
+WHY Js 
+&WHERE Js 
+
+UI
+ To make Application Dynamic & interactive -
+ FORM VALIDATION  
+ CRUD OPERATION 
+ CREATE :
+ READ 
+ UPDATE 
+ DELETE 
+ ADD to cart  (action) ,calculation
+ Notification,alerts,
+ search functionalities  ,filters 
+ fetch the data
+ locations,history 
+
+ BACKEND-Nodejs 
+ creating the server (using the js )
+
+ Mobile(reactnatice) ,desktop(nodejs) ,webapplication(nodejs ,js react)
+
+Database : mongodb ,Firebase
+
+CSS FRAMEWORKS
+Bootstrap,tailwind ,antdesign chakara ui ,
+material ui  
+
+JS FRAMEWORKS
+angular 
+next js : react 
+vue js 
+3js 
+react(library)
+jquery(library)
+redux(library)
+nest js 
+
+How many days or months or years JS is been developed  ?
+10days--1995 
+1997- ecma:european computer manfacturing association
+1997-
+-2015--es6 ( class(oops),arrow function let const)
+2025
+
+
+BASIC SYNTAX JS 
+
+Different STATEMENTS
+1.document.write()
+2.console.log()
+3.alert()
+4.innerHtml /innerText/textContent 
+
+comments 
+1.single line comments
+ // comment here
+ 2.multiline comments 
+ /* comment here */
+
+Different ways to include Js to html 
+1.inline js
+2.internal js 
+3.external js 
+vue
+
+
+Day_2
+
+Variables
+Datatypes
+Terminologies
+
+Datatypes 
+
+799878---> data which of type Number 
+Ravi ---> Data which of type string any text values  "" ,'' ,``
+True/false--- Data which of type boolean v
+contactbook =null empty contact ---->Data which of type null 
+multiple contact---[]--Data which of type array
+             ---{} --ata which of type object 
+bigint -
+function :Data which of type null 
+
+
+varaibles : are containers which is used to store different tyepes of data or values (string number ,boolean ,array ,function )
+
+
+DECLARATION : creation of varaible or function or class 
+REDECLARATION : creating a varaible with same name in the same scope 
+INITIALIZATION :  assigning a value at time of creation (DECLARATION) or after creation 
+SCOPE : lifeTime of varaible (accessibility of varaible )
+HOISTING  : moving all decalartion to top of there scope
+
+
+Different Ways to decalar the  varaible 
+1.using the var keyword ---> 1995
+2.using the let keyword ---> ES6
+3.using the const keyword ---> ES6
+4. no keyword 
+
+
+IdentiFiers : Names given to  varaible or function or class 
+RULES  
+1.dont start with Number 
+2.it should not contain any special character except $ and _ 
+3.it should contain white spaces
+3.it should contain   reserved keywords ,var let const if class function 
+
