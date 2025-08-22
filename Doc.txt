@@ -114,3 +114,8 @@ RULES
 3.it should contain white spaces
 3.it should contain   reserved keywords ,var let const if class function 
 
+
+NUMBERS
+Patterns
+strings
+arrays 

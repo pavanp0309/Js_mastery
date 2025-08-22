@@ -1,0 +1,24 @@
+1.what are natural numbers 
+2.what are integers 
+3.what are whole numbers 
+4.what are prime numbers 
+5.what are perfect numbers 
+6.what are strong numbers 
+7 what is harshad numbers 
+8.what are amstrong Numbers  
+9 what is gcd /hcf
+10.what is lcm 
+11.how to reverse a  number in js 
+12.how to find square and cubes of numbers 
+13.what is divisior and quotient and how to get those values 
+14.how to sum the digits in a numbers 
+15.what is palindrom 
+16.how to extract and remove the last_digits of number
+
+
+
+
+
+
+
+
