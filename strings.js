@@ -239,12 +239,13 @@ console.log(Data.replaceAll(/J/gi,"🎀"))
 // indexof 
 // at(2021)
 
-// let a="hello"
-// let rev=""
-// for(let i=a.length;i>=0;i--){
-//       rev+=a[i]
+let a="madam"
+
+let rev=""
+for(let i=a.length-1;i>=0;i--){
+      rev+=a[i]
       
-// }
-// console.log(rev===a)
+}
+console.log(rev===a)
 
 // console.log(a.split("").reverse().join())
