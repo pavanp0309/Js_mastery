@@ -1,0 +1,39 @@
+
+DOM:Document Object Model 
+
+let data={
+    h1:"hello",
+    name:"raju"
+    getdata:function(){}
+}
+
+h1 name  arec properties 
+getdata: method
+  hello ,raju are value 
+ To access the values  
+🎀---> console.log(data.h1) 
+ To access the method 
+🎀---> data.getdata()  
+
+Dom used along with js to make application dynamic and interactive 
+ usecases:
+   formvalidation
+    crud 
+   events (cliking the button )
+
+<!-- heading -->
+<h1 id="id1">Hello</h1>
+
+h1 : element node /node 
+Hello or whitespace: text node 
+<!-- heading -->: comment node
+document :root node
+id: attribute 
+
+1.
+Different method to access to Html into Js 
+1.document.getElementById()
+2.document.getElementByClassName()
+3.document.getElementByTagName()
+4.document.querySelector()
+5.document.querySelectorAll()

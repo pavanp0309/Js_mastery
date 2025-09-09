@@ -122,7 +122,7 @@
 
 // To remove the elements from certain index  
 // slice(startindex,endindex)
-let arr3=[1,3,4,5,6,8,7,7]
+// let arr3=[1,3,4,5,6,8,7,7]
 // console.log(arr3)
 // console.log(arr3.slice())//=[1,3,4,5,6,6,7,7]
 // console.log(arr3.slice(2))//[4, 5, 6, 6, 7, 7]
@@ -132,15 +132,150 @@ let arr3=[1,3,4,5,6,8,7,7]
 
 // Array.splice(start: number, deleteCount?: number)
 
-let arr4=[1,"🎈" ,3,"java","py"]
-// console.log(arr4.splice())//[]
-// console.log(arr4.splice(1))//['🎈', 3, 'java', 'py']
-// console.log(arr4.splice(1,2))//['🎈', 3]
-// console.log(arr4.splice(2,1))//[3]
-console.log(arr4.splice(2,2,"js","html","css"))//[3]
-console.log(arr4)
+// let arr4=[1,"🎈" ,3,"java","py"]
+// // console.log(arr4.splice())//[]
+// // console.log(arr4.splice(1))//['🎈', 3, 'java', 'py']
+// // console.log(arr4.splice(1,2))//['🎈', 3]
+// // console.log(arr4.splice(2,1))//[3]
+// console.log(arr4.splice(2,2,"js","html","css"))//[3]
+// console.log(arr4)
 
 
 // Higher methods
 // Map
 // filter reduce  foreach find findIndex sort Reverse 
+
+// Syntax : 
+// map(function(ele,index,newarry){}) //anonomous function syntax
+// map((ele,index,newarry)=>{}) // arrow function syntax
+// function data(ele,index,newarry){}
+// map(data) // Named function syntax
+// Map :
+
+let arr=[1,3,4,5,6,,7,8,8,9,21]
+// let res=arr.map(function(ele,index){
+//    console.log("ele",ele)
+//    console.log("i",index)
+// })
+
+// let res1=arr.map((ele,index)=>{
+//    console.log("ele",ele)
+//    console.log("i",index)
+// })
+
+// function data(ele,index){
+//    console.log("ele",ele)
+//    console.log("i",index)
+// }
+// let res3=arr.map(data)
+
+let arr1=[1,3,4,5,6,,7,8,8,9,21]
+// let res5=arr1.map(function(ele){
+//   return ele+3
+// })
+
+// console.log(res5)
+
+// Without using the Map
+// function addAnumber(ele){
+//     let newarr=[]
+//     console.log(ele)
+//     for(let i=0;i<ele.length;i++){
+//        console.log(ele[i])
+//     //    adding into new array
+//        newarr.push(ele[i]+=3)
+
+//     }
+//     return newarr
+
+// }
+// let res=addAnumber(arr1)
+// console.log(res)
+
+// let res5=arr1.map(function(ele){
+//    console.log("mele",ele)
+//    return ele+3
+// })
+// console.log(res5)
+
+// write a program using the map to square each number in  given array
+// let arr3=[1,3,5,7,9,11,13,15]
+// let res=arr3.map((ele)=>ele**2)
+// console.log(res)
+
+// write a program using the map to check given number or even or odd in a array
+let arr6=[1,2,4,5,6,7,8,9,10,12,14]
+let even=arr6.map(function(ele){
+    return ele%2==0
+})
+console.log(even)
+
+// function printEven(arr){
+//     let even=[]
+//     for(let i=0;i<arr.length;i++){
+//           if(arr[i]%2==0){
+//             even.push(arr[i])
+//           }
+//     }
+//     return even
+// }
+
+// let re=printEven(arr6)
+// console.log(re)
+
+
+// Filter : it returns an array with few element that satisify the codition
+let arr7=[1,2,4,5,6,7,8,9,10,12,14]
+// let even1=arr6.map(function(ele,i){
+//     console.log(ele)
+//     console.log("i",i)
+//     return ele%2==0
+// })
+// console.log(even1) //[false, true, true, false, true, false, true, false, true, true, true]
+
+// let even2=arr6.filter(function(ele,i){
+// //     console.log(ele)
+// //     console.log("i",i)
+// //     return ele%2!==0
+// // })
+// // console.log(even2) 
+
+// let arr8=[1,2,4,5,6,7,8,9,10,12,14]
+// function Total(arr){
+//     let sum=0
+//   for(let i=0;i<arr.length;i++){
+//     sum+=arr[i]
+//   }
+//   return sum
+// }
+// let res2=Total(arr8)
+// console.log(res2)
+
+// // it returns the single Value
+// let res=arr8.reduce(function(total,ele,_,newarr){
+//   console.log("t",total)
+//   console.log("e",ele)
+// //   console.log("i",index)
+// //   console.log("ar",newarr)
+//   return total+ele
+// })//initial value
+// console.log(res)
+
+// Foreach method 
+let arr3=[1,3,4,5,6,8,10,14]
+// let res2=arr3.forEach((ele,i)=>{
+//     console.log("ele",ele)
+//     console.log("index",i)
+//     return ele*3
+// })
+// console.log(res2)
+// let totaleven=arr3.filter((ele)=>ele%2==0).map((ele)=>ele*2).reduce((t,e)=>t+e)
+
+// console.log(totaleven)
+
+let arr4=[1,3,4,5,6,4,8,10,14]
+console.log(arr4.find((ele)=>ele==4)) //4
+console.log(arr4.findIndex((ele)=>ele==4))//2
+console.log(arr4.sort((a,b)=>a-b))//ascend order
+console.log(arr4.sort((a,b)=>b-a))//descascend order
+console.log(arr4.reverse())//descascend order
