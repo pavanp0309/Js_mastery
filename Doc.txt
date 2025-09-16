@@ -119,3 +119,25 @@ NUMBERS
 Patterns
 strings
 arrays 
+
+
+
+
+Terminologies :
+Event: Action   eg: cliking the button add item to cart opening a popup scroling page typing etc..
+
+Different Events :
+1.Mouse Events  : onclick ondblclick onmouseover onmouseleave onmouseenter etc.. 
+2.keyBoard events : onkeyUp onkeyDown onKeypress etc..
+3.Form Events : onsubmit onchange etc..
+4.Browser Events :documentContentload  ,load ,onscroll onresize ect..
+
+
+EVENT HANDLERS : Nothing But Functions which Excute the block of code when speccific event is fired or called 
+EVENT LISTENERS : listenes to Type of event (mouse keyboard or form or Browser) and calls the respected eventhandlers
+
+
+Different ways to integarte the Events into Html 
+1.directly through Html attributes 
+2.through Dom attributes 
+3.using addeventlistners 
