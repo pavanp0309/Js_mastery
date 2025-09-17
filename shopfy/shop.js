@@ -32,7 +32,10 @@ document.addEventListener("DOMContentLoaded",()=>{
     })
    })
 
-
+//   🎭 Applying functionalities to cart_icon button
+      cartIconbtn.addEventListener("click",()=>{
+        return window.location.href="cart.html"
+      })
 }
 
 )
