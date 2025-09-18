@@ -13,12 +13,6 @@ function loadCartItems(){
     }
 }
 
-// 🐴3.function to print the cart_icon _total 
-function cartIconTotal(){
-    let cartVal=document.querySelector(".cart-value")
-    let icontotal=cartItems.reduce((total,ele)=>total+ele.quantity,0)
-    cartVal.textContent=icontotal
-}
 
 // Print the Loaded items into cart Ui (function to handlecartui)
 function handleCartUi(){
@@ -50,6 +44,7 @@ function handleCartUi(){
           let increBtn=product.querySelector('.incre-btn')
           let decreBtn=product.querySelector('.decre-btn')
           let quantityval=product.querySelector('.quantity')
+          console.log("re-check",quantityval)
           let deleteBtn=product.querySelector('.delete-btn')
 
         //   applying the functionalities to all btn
@@ -70,24 +65,65 @@ function handleCartUi(){
         //   appending the product into document
         cartproducts.appendChild(product)
     })
+    cartTotal()
 }
 
-// function to handle_increment Quantity
+// 🧨🎊function to handle_increment Quantity
 function handleIncrement(product,quantity){
- console.log(product,quantity)
+ console.log("p",product)
+ console.log("q",quantity)
  let increval=product.quantity++
  quantity.textContent=increval
  localStorage.setItem("cart",JSON.stringify(cartItems))
+ cartTotal()
+ cartIconTotal()
 }
-// function to handle_decrement Quantity
+
+//🧨🎊 function to handle_decrement Quantity
 function handleDecrement(product,quantity){
  console.log(product,quantity)
+ if(product.quantity>1){
+      let decreval=product.quantity--
+      quantity.textContent=decreval
+       localStorage.setItem("cart",JSON.stringify(cartItems))
+       cartTotal()
+       cartIconTotal()
+ }
+
 }
 // function to handle_delete Quantity
 function handleDelete(product){
  console.log(product)
-
+  cartItems=cartItems.filter((items)=>items.title!==product.title)
+  handleCartUi()
+  localStorage.setItem("cart",JSON.stringify(cartItems))
+cartTotal()
+cartIconTotal()
 }
+
+
+
+// 🐴3.function to print the cart_icon _total 
+function cartIconTotal(){
+    let cartVal=document.querySelector(".cart-value")
+    let icontotal=cartItems.reduce((total,ele)=>total+ele.quantity,0)
+    cartVal.textContent=icontotal
+}
+
+// 🐴3.function to print the cart_icon _total 
+function cartTotal(){
+    let cartVal=document.querySelector(".cart-total")
+    let carttotal=cartItems.reduce((total,ele)=>total+ele.quantity*ele.price,0)
+    cartVal.textContent=carttotal
+}
+
+
 // function to Removeall Quantity
-// function to cart_total
-// function to cart_icon total 
+function Removeall(){
+   cartItems= cartItems.splice()
+   console.log(cartItems)
+     localStorage.setItem("cart",JSON.stringify(cartItems))
+    handleCartUi()
+}
+
+

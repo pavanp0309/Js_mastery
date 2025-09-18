@@ -19,11 +19,15 @@ document.addEventListener("DOMContentLoaded",()=>{
          let ptitle=productinfo.querySelector(".product-title").innerText
          let pdescription=productinfo.querySelector(".product-description").innerText
          let pprice=productinfo.querySelector(".product-price").innerText
+        //  console.log(pprice.replace(/[^\d]/g,""))
+        let c=pprice.replace(/[^\d]/g,"") // extracting only the digits
+         console.log(typeof parseFloat(c)) //converting the string into number
+        
         //  console.log({imageUrl,pprice,ptitle,pdescription})
         let selectedprod={
             title:ptitle,
             description:pdescription,
-            price:pprice,
+            price:parseFloat(c),
             imgUrl:imageUrl,
             quantity:1
         }
